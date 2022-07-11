@@ -1,0 +1,126 @@
+/* * {
+  box-sizing: border-box;
+}
+body {
+  background: #343d46;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.control {
+  width: 410px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.control input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 6px 8px rgba(255, 255, 255, 0.268);
+}
+input::placeholder {
+    color: rgb(35, 3, 3);
+    opacity: 0.5;
+    padding-left: 10px;
+
+  }
+button::hover {
+  background-color: rgb(4, 113, 113);
+}
+.control button {
+  width: 100px;
+  height: 40px;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+}
+
+.loading {
+  margin-top: 50px;
+  color: aliceblue;
+} */
+* {
+  box-sizing: border-box;
+}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+body {
+  background-image: url(/img/1616426921_19-p-biznes-fon-20.jpg);
+  background-size: cover;
+  margin: 0;
+}
+table {
+  background-color: #fff;
+  border-collapse: collapse;
+  margin: 0 40px;
+}
+caption {
+  color: #fff;
+  font-size: 25px;
+}
+th {
+  padding: 5px 10px;
+}
+td {
+  padding: 5px 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.control:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.control form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+.control input {
+  width: 350px;
+  height: 42px;
+  padding-left: 15px;
+  padding-right: 35px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #f9f0da;
+  outline: none;
+  position: relative;
+  transition: 0.3s linear;
+}
+.control input:focus {
+  width: 500px;
+}
+.control button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+.control button:before {
+  content: '\f002';
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+
+.loading {
+  margin-top: 50px;
+  color: aliceblue;
+}
